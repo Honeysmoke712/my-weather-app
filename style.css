@@ -1,18 +1,4 @@
-/*.container {  
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap; 
-  }
-  
-  .container .image {
-    width: 50%;
-  }
-  
-  .container img {
-    width: calc(100% - (5px * 2));
-    margin: 5px;
-  }
-    */
-
-    
+.container {
+    display: center;
+    margin: 0 auto;
+}
