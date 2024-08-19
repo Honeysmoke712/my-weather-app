@@ -16,6 +16,7 @@ input.search {
     height: 30px;
     width: 232px;
     margin-top: 20px;
+    margin-right: 5px;
     border-radius: 20px;
     background-color: #f9f7fe;
     color: #EE41F1 ;
@@ -34,6 +35,7 @@ input.submit {
     height: 30px;
     width: 101px;
     margin-top: 20px;
+    margin-left: 5px;
     border-radius: 20px;
     background-color: #f9f7fe;
     color: #EE41F1 ;
@@ -130,6 +132,7 @@ img {
   div.table-data {
     background-color: #FCF0FF;
     border-radius: 15px;
+    margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
