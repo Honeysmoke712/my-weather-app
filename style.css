@@ -1,18 +1,17 @@
 body {
     background-color: #f9f7fe;
+   text-align: center;
 }
 
 .container {
-
     background-color: #FEDFFF;
-    height: 700px;
+    height: 736px;
     width: 393px;
     border-radius: 15px;
+    margin: 0 auto;
 }
 
-input {
 
-}
 input.search {
     height: 30px;
     width: 232px;
@@ -27,6 +26,7 @@ input.search {
     font-style: normal;
     font-size: 20px;
     color: #EE41F1 ;
+    box-shadow: 3px 3px 10px rgb(190, 191, 192);
 
 }
 
@@ -44,8 +44,11 @@ input.submit {
     font-style: normal;
     font-size: 20px;
     color: #EE41F1 ;
+    box-shadow: 3px 3px 10px rgb(190, 191, 192);
+    
 }
 img {
+    margin-top: 15px;
     height: 220px;
     width: 230px;
 }
@@ -54,30 +57,42 @@ img {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 90px;
+    font-size: 70px;
     color: #EE41F1 ;
-    margin: 0 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    height: 70px;
   }
-  h1.condition {
+
+  p.date {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 25px;
-    margin: 0 0;
+    font-size: 20px;
+    color: #EE41F1 ;
+  }
+  p.condition {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
     color: #EE41F1 ;
   }
   div.current-stats {
     background-color: #FCF0FF;
     border-radius: 15px;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px rgb(190, 191, 192);
   }
  h1 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     color: #EE41F1 ;
   }
   h1.city{
@@ -85,7 +100,7 @@ img {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 0;
   }
   
@@ -115,7 +130,14 @@ img {
   div.table-data {
     background-color: #FCF0FF;
     border-radius: 15px;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px rgb(190, 191, 192);
+    
+  }
+  td {
+    padding-left: 15px;
+    padding-right: 55px;
   }
 
   .table-data {
@@ -123,8 +145,10 @@ img {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    font-size: 20px;
     margin: 10px 0;
     color: #EE41F1 ;
+   
   }
 
   .table-image {
@@ -138,6 +162,6 @@ img {
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
-    margin: 0 0;
+    margin-top: 25px;
     color: #EE41F1 ;
  }
