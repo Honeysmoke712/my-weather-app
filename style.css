@@ -1,4 +1,143 @@
-.container {
-    display: center;
-    margin: 0 auto;
+body {
+    background-color: #f9f7fe;
 }
+
+.container {
+
+    background-color: #FEDFFF;
+    height: 700px;
+    width: 393px;
+    border-radius: 15px;
+}
+
+input {
+
+}
+input.search {
+    height: 30px;
+    width: 232px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #f9f7fe;
+    color: #EE41F1 ;
+    border: none;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #EE41F1 ;
+
+}
+
+input.submit {
+    height: 30px;
+    width: 101px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #f9f7fe;
+    color: #EE41F1 ;
+    border: none;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #EE41F1 ;
+}
+img {
+    height: 220px;
+    width: 230px;
+}
+ h2 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 90px;
+    color: #EE41F1 ;
+    margin: 0 0;
+  }
+  h1.condition {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0 0;
+    color: #EE41F1 ;
+  }
+  div.current-stats {
+    background-color: #FCF0FF;
+    border-radius: 15px;
+    margin: 20px;
+  }
+ h1 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    color: #EE41F1 ;
+  }
+  h1.city{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0 0;
+  }
+  
+  p.current-time {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0;
+  }
+  p.humidity-wind {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0;
+    color: #EE41F1 ;
+  }
+  p {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0;
+    color: #EE41F1 ;
+  }
+  div.table-data {
+    background-color: #FCF0FF;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  .table-data {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 10px 0;
+    color: #EE41F1 ;
+  }
+
+  .table-image {
+    height: 50px;
+    width: 45px;
+  }
+
+ footer {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0 0;
+    color: #EE41F1 ;
+ }

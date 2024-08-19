@@ -4,44 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to my weather app</h1>
 <div class="container">
     <div class="form">
         <form>
-        <input type="search" placeholder="Enter a City..." required >
-        <input type="submit" value="Search">
+        <input type="search" placeholder="Enter a City..." required class="search">
+        <input type="submit" value="Search" class="submit">
         </form>
     <div>
     <div>
         <img src="images/free-sun-icon-3335.png" alt="sun">
     
         <header>
-         <h1 class="current-temp">100&degF<br>Sunny </h1>
-         <h2 class="city">Dallas, TX</h2>
+         <h2 class="current-temp"><strong>100&degF</strong></h2>
+         <h1 class="condition">Sunny</h1> 
+         <h1 class="city">Dallas, TX</h1>
         </header>
     </div>
     <div class="current-stats">
-        <p>Saturday August 17th
-        <br/>12:00pm
-        <br>Humidiy:60% Wind:5mph
+        <p class="date"><strong>Saturday August 17th</strong> 
+        </p>
+        <p class="current-time">12:00PM</p>
+        <p class="humidity-wind"><strong>Humidity:</strong>60%     <strong>Wind:</strong> 5mph
         </p>
     </div>
-    <div>
-        <table>
-            <tr class="day"></tr>
+    <div class="table-data">
+        <table >
+            <tr class="day-one"></tr>
                 <td>SUN</td>
-                <td>Image</td>
+                <td><img src="images/free-sun-icon-3335.png" alt="sunny" class="table-image"></td>
                 <td>100&degF</td>
-            <tr class="condition"></tr>
+            <tr class="day-two"></tr>
                 <td>MON</td>
-                <td>Image</td>
+                <td><img src="images/free-sun-icon-3335.png" alt="sunny" class="table-image"></td>
                 <td>99&degF</td>
-            <tr class="temp"></tr>
+            <tr class="day-three"></tr>
                 <td>TUE</td>
-                <td>Image</td>
+                <td><img src="images/free-sun-icon-3335.png" alt="sunny" class="table-image"></td>
                 <td>98&degF</td>
         </table>
     </div>
