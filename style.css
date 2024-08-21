@@ -19,7 +19,7 @@ input.search {
     margin-right: 5px;
     border-radius: 20px;
     background-color: #f9f7fe;
-    color: #EE41F1 ;
+    
     border: none;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -37,15 +37,14 @@ input.submit {
     margin-top: 20px;
     margin-left: 5px;
     border-radius: 20px;
-    background-color: #f9f7fe;
-    color: #EE41F1 ;
+    background-color: #EE41F1;
+    color: #f9f7fe ;
     border: none;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 20px;
-    color: #EE41F1 ;
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
     
 }
