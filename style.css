@@ -5,7 +5,7 @@ body {
 
 .container {
     background-color: #FEDFFF;
-    height: 736px;
+    height: 755px;
     width: 393px;
     border-radius: 15px;
     margin: 0 auto;
@@ -26,7 +26,7 @@ input.search {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-    color: #EE41F1 ;
+    color: #ff1493 ;
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
 
 }
@@ -37,7 +37,7 @@ input.submit {
     margin-top: 20px;
     margin-left: 5px;
     border-radius: 20px;
-    background-color: #EE41F1;
+    background-color: #ff1493;
     color: #f9f7fe ;
     border: none;
     font-family: "Cinzel", serif;
@@ -50,20 +50,21 @@ input.submit {
 }
 img {
     margin-top: 15px;
-    height: 220px;
-    width: 230px;
+    height: 180px;
+    width: 190px;
 }
  h2 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 70px;
-    color: #EE41F1 ;
+    font-size: 40px;
+    color: #ff1493 ;
     margin-top: 0;
     margin-bottom: 0px;
-    height: 70px;
+    
   }
+
 
   p.date {
     font-family: "Cinzel", serif;
@@ -71,7 +72,7 @@ img {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-    color: #EE41F1 ;
+    color: #ff1493 ;
   }
   p.condition {
     font-family: "Cinzel", serif;
@@ -79,7 +80,7 @@ img {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-    color: #EE41F1 ;
+    color: #ff1493 ;
   }
   div.current-stats {
     background-color: #FCF0FF;
@@ -94,7 +95,7 @@ img {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
-    color: #EE41F1 ;
+    color: #ff1493 ;
   }
   h1.city{
     font-family: "Cinzel", serif;
@@ -118,7 +119,7 @@ img {
     font-weight: normal;
     font-style: normal;
     margin: 0 0;
-    color: #EE41F1 ;
+    color: #ff1493 ;
   }
   p {
     font-family: "Cinzel", serif;
@@ -126,7 +127,7 @@ img {
     font-weight: normal;
     font-style: normal;
     margin: 0 0;
-    color: #EE41F1 ;
+    color: #ff1493 ;
   }
   div.table-data {
     background-color: #FCF0FF;
@@ -149,13 +150,13 @@ img {
     font-style: normal;
     font-size: 20px;
     margin: 10px 0;
-    color: #EE41F1 ;
+    color: #ff1493 ;
    
   }
 
   .table-image {
-    height: 50px;
-    width: 45px;
+    height: 40px;
+    width: 35px;
   }
 
  footer {
@@ -164,6 +165,6 @@ img {
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
-    margin-top: 25px;
-    color: #EE41F1 ;
+    margin-top: 45px;
+    color: #ff1493 ;
  }
