@@ -48,6 +48,8 @@ input.submit {
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
     
 }
+
+
 img {
     margin-top: 15px;
     height: 180px;
@@ -129,7 +131,7 @@ img {
     margin: 0 0;
     color: #ff1493 ;
   }
-  div.table-data {
+  div.forecast-container  {
     background-color: #FCF0FF;
     border-radius: 15px;
     margin-top: 15px;
@@ -138,19 +140,38 @@ img {
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
     
   }
-  td {
-    padding-left: 15px;
-    padding-right: 55px;
+  .forecast-day {
+    display: flex; 
+    align-items: center;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    color: #ff1493 ; 
+    justify-content: center;
+    padding-block: 0 0px;
   }
 
-  .table-data {
+  .Weather-forecast {
+    
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
     margin: 10px 0;
-    color: #ff1493 ;
+    color: #ff1493 ; 
+   
+}
+
+.icon {
+    height: 40px;
+    width: 35px;
+}
+ 
+  .table-data {
+   
    
   }
 
