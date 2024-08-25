@@ -1,5 +1,6 @@
 
 
+//TEMPERATURE
 function updateWeather(response) {
 
     let temperatureElement = document.querySelector("#temp");
@@ -28,6 +29,26 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+//FORECAST
 
+
+function displayForecast() {
+let forecast = document.querySelector("#forecast");
+
+let days = [`TUE`, `WED`, `THU`, `FRI`, `SAT`, `SUN`, `MON`];
+
+let foercastHtml = "";
+days.forEach(function (day) {
+
+foercastHtml = foercastHtml + `
+<div class="forecast-day">
+  <div class="Weather-forecast-day">SUN</div>
+  <div class="Weather-forecast-icon"><img src="images/sun-512.png" alt="sunny" class="icon"></div>
+  <div class="Weather-forecast-temperatures">99&degF 100&degF</div>    
+</div>
+`;
+});
+forecastElement.innerHTML = foercastHtml
+}
 
 
