@@ -130,9 +130,11 @@ img {
     background-color: #FCF0FF;
     box-shadow: 3px 3px 10px rgb(190, 191, 192);
     margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
+    margin-right: 20px;     
+    border-radius: 15px;
   }
+
+
 
   .forecast-day {
     display: flex; 
@@ -144,11 +146,8 @@ img {
     font-size: 30px;
     color: #ff1493 ; 
     justify-content: center;
-    padding-block: 0 0px;
     background: #FCF0FF;
   }
-
-
 
   .weather-forecast {
     
@@ -159,8 +158,11 @@ img {
     font-size: 20px;
     margin: 10px 0;
     color: #ff1493 ; 
-    gap: 30px;
-   
+ 
+}
+
+.item {
+  
 }
 
 .icon {
