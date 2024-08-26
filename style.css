@@ -1,186 +1,138 @@
 body {
-    background-color: #f9f7fe;
-   text-align: center;
+  background-color: #ff89c8;
 }
-
 .container {
-    background-color: #FEDFFF;
-    height: 755px;
-    width: 393px;
-    border-radius: 15px;
-    margin: 0 auto;
+  background-color: white;
+  width: 776px;
+  height: 400px;
+  display: block;
+  margin: 100px auto;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px 1px rgba(140,84,115,1);
+}
+.header {
+ display: flex;
+ justify-content: center;
+ gap: 200px;
+ padding: 25px;
 }
 
+h1 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  color: #000000 ;
+}
 
 input.search {
-    height: 30px;
-    width: 232px;
-    margin-top: 20px;
-    margin-right: 5px;
-    border-radius: 20px;
-    background-color: #f9f7fe;
-    
-    border: none;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    color: #ff1493 ;
-    box-shadow: 3px 3px 10px rgb(190, 191, 192);
-
+  height: 30px;
+  width: 232px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-right: 5px;
+  border-radius: 20px;
+  background-color: #f9f7fe;
+  border: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #ff1493 ;
+  box-shadow: 1px 1px 3px 1px rgba(140,84,115,1);
 }
 
 input.submit {
-    height: 30px;
-    width: 101px;
-    margin-top: 20px;
-    margin-left: 5px;
-    border-radius: 20px;
-    background-color: #ff1493;
-    color: #f9f7fe ;
-    border: none;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-    box-shadow: 3px 3px 10px rgb(190, 191, 192);
-    
+  height: 30px;
+  width: 101px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: #ff1493;
+  color: #f9f7fe ;
+  border: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  box-shadow: 1px 1px 3px 1px rgba(140,84,115,1);
 }
 
-
-img {
-    margin-top: 15px;
-    height: 180px;
-    width: 190px;
-}
- h2 {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 40px;
-    color: #ff1493 ;
-    margin-top: 0;
-    margin-bottom: 0px;
-    
-  }
-
-
-  p.date {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    color: #ff1493 ;
-  }
-  p.condition {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    color: #ff1493 ;
-  }
-  div.current-stats {
-    background-color: #FCF0FF;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 3px 3px 10px rgb(190, 191, 192);
-  }
- h1 {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    color: #ff1493 ;
-  }
-  h1.city{
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    margin: 0 0;
-  }
-  
-
-  p.humidity-wind {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0 0;
-    color: #ff1493 ;
-  }
-  p {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0 0;
-    color: #ff1493 ;
-  }
-
-  div.forecast-container  {
-    background-color: #FCF0FF;
-    box-shadow: 3px 3px 10px rgb(190, 191, 192);
-    margin-left: 20px;
-    margin-right: 20px;     
-    border-radius: 15px;
-  }
-
-
-
-  .forecast-day {
-    display: flex; 
-    align-items: center;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 30px;
-    color: #ff1493 ; 
-    justify-content: center;
-    background: #FCF0FF;
-  }
-
-  .weather-forecast {
-    
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 20px;
-    margin: 10px 0;
-    color: #ff1493 ; 
- 
+.current-weather {
+  display: flex;
+  justify-content: left;
+  gap: 200px;
+  padding: 0 25px;
 }
 
-.item {
+.live-forecast {
+  display: flex;
+  padding: 0 25px;
+  text-align: end;
+}
+
+.current-img {
+  height: 110px;
+  width: 110px;
+  padding-right: 20px;
+}
+
+h1.current-temp {
+  font-size: 75px;
+  margin: 0;
+}
+
+h1.current-condition {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.current-data {
+  text-align: right;
+  padding-top: 10px;
+}
+
+p {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0;
+  color: #000000 ;
+  font-size: 20px;
   
 }
 
-.icon {
-    height: 40px;
-    width: 35px;
+p.date {
+  font-size: 24px;
 }
 
-  .table-image {
-    height: 40px;
-    width: 35px;
-  }
+p.humidity-wind {
 
- footer {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 15px;
-    margin-top: 45px;
-    color: #ff1493 ;
- }
+}
+
+.forecast-container {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 45px;
+  margin: 0 auto;
+}
+
+.forecast {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 60px;
+  
+}
+
+.daily-img {
+  height: 55px;
+  width: 55px;
+}

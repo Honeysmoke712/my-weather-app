@@ -33,7 +33,7 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 
 function displayForecast() {
-let forecast = document.querySelector("#forecast");
+let forecast = document.querySelector("#forecast-container");
 
 let days = [`TUE`, `WED`, `THU`, `FRI`, `SAT`, `SUN`, `MON`];
 
