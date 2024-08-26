@@ -31,22 +31,26 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 
 function displayForecast() {
-let forecast = document.querySelector("#forecast-container");
+  let forecastElement = document.querySelector("#forecast");
 
-let days = [`TUE`, `WED`, `THU`, `FRI`, `SAT`, `SUN`, `MON`];
+let days = [`SUN`, `MON`, `TUE`, `WED`, `THU`, `FRI`,`SAT`];
+let forecastHtml = "";
 
-let foercastHtml = "";
 days.forEach(function (day) {
 
-foercastHtml = foercastHtml + `
-<div class="forecast-day">
-  <div class="Weather-forecast-day">SUN</div>
-  <div class="Weather-forecast-icon"><img src="images/sun-512.png" alt="sunny" class="icon"></div>
-  <div class="Weather-forecast-temperatures">99&degF 100&degF</div>    
-</div>
-`;
+  forecastHtml = 
+  forecastHtml + 
+  `
+      <div class="forecast" id="forecast">
+      <div class="daily-forecast">
+         <p class="day">${day}</p>
+         <img src="images/clouds-512.png" alt="cloud" class="daily-img">
+        <p class="daily-temp">76°  97°</p>
+      </div>
+    `;
 });
-forecastElement.innerHTML = foercastHtml
+
+forecastElement.innerHTML = forecastHtml;
 }
 
-
+displayForecast();
