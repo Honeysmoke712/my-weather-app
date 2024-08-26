@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
        <header>
         <div class="header">
             
-            <h1><strong>St. Louis, MO</strong></h1>
+            <h1 id="city">St. Louis, MO</h1>
 
             <div class="form">
                 <form id="search-form">
@@ -38,7 +39,7 @@
         <div class="live-forecast">
             <img src="images/sun-512.png" alt="sun" class="current-img">
            <div>
-             <h1 class="current-temp">90°</h1>
+             <h1 class="current-temp" id="current-temp">00</h1>
              <h1 class="current-condition">Sunny</h1>
            </div>
         </div>
@@ -85,5 +86,8 @@
 
         
     </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,8 @@
 
-
 //TEMPERATURE
 function updateWeather(response) {
 
-    let temperatureElement = document.querySelector("#temp");
+    let temperatureElement = document.querySelector("#current-temp");
     let temperature = (response.data.temperature.current);
     temperatureElement.innerHTML = Math.round(temperature);
     let cityElement = document.querySelector("#city");
@@ -22,7 +21,6 @@ axios.get(apiUrl).then(updateWeather);
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
-
     searchCity(searchInput.value);
  }
 
