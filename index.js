@@ -4,16 +4,20 @@ function updateWeather(response) {
 
     let temperatureElement = document.querySelector("#current-temp");
     let temperature = (response.data.temperature.current);
-    temperatureElement.innerHTML = Math.round(temperature);
     let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = response.data.city;
+    
+    cityElement.innerHTML = response.data.city; 
+    temperatureElement.innerHTML = Math.round(temperature);
+    
+   
+    getForecast(response.data.city);
+
 }
 //API
 function searchCity(city) {
    let apiKey = "0fo9f7cff9112b546tb3124acea4be3b";
    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
-  
-axios.get(apiUrl).then(updateWeather);
+   axios.get(apiUrl).then(updateWeather);
 }
 
 //FORM
@@ -21,17 +25,23 @@ axios.get(apiUrl).then(updateWeather);
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
+
     searchCity(searchInput.value);
  }
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
-
 //FORECAST
 
+function getForecast(city) {
+  let apiKey = "0fo9f7cff9112b546tb3124acea4be3b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
+  
+  console.log(apiUrl);
+}
 
-function displayForecast() {
-  let forecastElement = document.querySelector("#forecast");
+function displayForecast(response) {
+  console.log(response);
+
 
 let days = [`SUN`, `MON`, `TUE`, `WED`, `THU`, `FRI`,`SAT`];
 let forecastHtml = "";
@@ -50,7 +60,14 @@ days.forEach(function (day) {
     `;
 });
 
-forecastElement.innerHTML = forecastHtml;
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHtml;
 }
 
+    let searchFormElement = document.querySelector("#search-form");
+    searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+getForecast();
 displayForecast();
+
+searchCity("Paris");
