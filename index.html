@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-
-       <header>
-        <div class="header">
-            
-            <h1 id="city">St. Louis, MO</h1>
-
-            <div class="form">
-                <form id="search-form">
-              
-                <input 
-                type="search" 
-                placeholder="Enter a City..." 
-                required 
-                id="search-form-input"
-                class="search">
-        
-                <input 
-                type="submit" 
-                value="Search" 
-                class="submit">
-                </form>
-            <div> 
-        </div>
+    <title>Meteo App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
       </header>
-    
-      <div class="current-weather">
-
-        <div class="live-forecast">
-            <img src="images/sun-512.png" alt="sun" class="current-img">
-           <div>
-             <h1 class="current-temp" id="current-temp">00</h1>
-             <h1 class="current-condition">Sunny</h1>
-           </div>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+                <img src="/images/sun-512.png" alt="sun">
+            </div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
 
-        <div class="current-data">
-            <p class="date"><strong>Day Month Date</strong></p>
-            <p class="humidity-wind">Humidity:60% Wind:5mph</p> 
-        </div>
-      </div>
-
-
-      <div class="forecast-container">
-        <div class="forecast" id="forecast">
-
-        </div>
-      </div>
-
-
-
-        
+      <footer>
+        This project was coded by
+        <a href="https://github.com/matthieua/" target="_blank"> Katie Payton</a>,
+        is
+        <a href="https://github.com/Honeysmoke712/my-weather-app" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://celadon-caramel-0a3be6.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </div>
     <script src="index.js"></script>
-   
-</body>
-
+  </body>
 </html>
